@@ -13,6 +13,30 @@ function setBackgroundColorById(elementId) {
     const backgroundColor = document.getElementById(elementId);
     backgroundColor.classList.add('bg-orange-400')
 }
+function removeBackgraoundColorById(elementId) {
+    const backgroundColor = document.getElementById(elementId);
+    backgroundColor.classList.remove('bg-orange-400');
+}
+
+// this is  score and life element  function =>
+function getTextElementValueById(elementId) {
+    const element = document.getElementById(elementId);
+    const elementText = element.innerText;
+    const value = parseInt(elementText);
+    return value;
+}
+
+// set score and life element function =>
+
+function setTextElementValueById(elementId, value) {
+    const element = document.getElementById(elementId);
+    element.innerText = value;
+}
+function getElementTextById(elementId) {
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+}
 
 function getARandomAlpabete() {
     const alpatbetsString = 'abcdefghijklmnopqrstuvwxyz';
